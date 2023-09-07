@@ -34,6 +34,23 @@
                 opacity: 1;
             }
         }
+
+        /* Style for the rotating circle image */
+        .rotating-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Make it circular */
+            animation: rotate 5s linear infinite; /* Rotate continuously */
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg); /* Rotate 360 degrees */
+            }
+        }
     </style>
 </head>
 <body>
@@ -50,6 +67,8 @@
         <div class="flashing-text">Jomi és um paneleiro</div>
         <div class="flashing-text">Jomi és um paneleiro</div>
         <div class="flashing-text">Jomi és um paneleiro</div>
+        <!-- Add the rotating circle image here -->
+        <img class="rotating-circle" src="1.jpeg" alt="Image description">
         <div class="flashing-text">Jomi és um paneleiro</div>
         <div class="flashing-text">Jomi és um paneleiro</div>
         <div class="flashing-text">Jomi és um paneleiro</div>
